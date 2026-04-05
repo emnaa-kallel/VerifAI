@@ -1,4 +1,4 @@
-# VerifAI — AI-Powered Misinformation Detector ✅
+# VerifAI — AI-Powered Misinformation Detector 
 
 **Résumé**  
 VerifAI est un prototype full-stack pour la détection de désinformation en ligne basé sur l'analyse multimodale (image + texte), la recherche d'image inversée et le raisonnement par IA. Le backend orchestre des composants spécialisés (OCR, recherche inversée, analyse contextuelle, raisonnement IA) et expose une API FastAPI ; le frontend React fournit une UI pour la soumission de contenu et la visualisation des verdicts.
@@ -10,11 +10,11 @@ VerifAI est un prototype full-stack pour la détection de désinformation en lig
 - Recherche inversée : **SerpAPI**
 - Stockage : fichiers locaux pour images uploadées / temporaires
 
-## 🏗️ Architecture
+##  Architecture (Diagramme)
 The diagram below shows the complete VerifAI AI pipeline from input to decision.
 ![VerifAI System](docs/verifai-diagram.png)
 
-## 🎨 Design / Diagram
+##  Design / Diagram
 
 👉 View the system design on Canva:
 https://canva.link/l3tggmem6je2srh
@@ -105,10 +105,10 @@ VerifAI/
 │       └── setupTests.js
 └──docs
 ```
-## 🔁 User Input Methods 
+##  User Input Methods 
 VerifAI supports two ways to analyze content: 
 --- 
-### 🖼️ 1. Image Upload 
+###  1. Image Upload 
 Users can upload an image directly from their device.
 
 ![Upload Example](docs/upload-example.png) 
@@ -118,7 +118,7 @@ This is a "real result" example
 ![Upload Example](docs/authentic_result.jpg)
 
 --- 
-### 🌐 2. URL Input 
+###  2. URL Input 
 Users can paste a social media post URL (Twitter, Facebook, etc.). 
 ![URL Example](docs/url-example1.png)
 ![URL Example](docs/url-example2.png)
