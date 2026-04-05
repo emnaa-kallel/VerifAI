@@ -61,7 +61,7 @@ The AI detects:
 ⏳ Temporal inconsistencies
 🌍 Geographical inconsistencies
 🔄 Caption vs image mismatch
-📌 Prompt Used:
+📌 Prompt Used
 You are an AI fact-checking assistant.
 
 You are given:
@@ -85,26 +85,22 @@ Explanation:
 
 Final Conclusion:
 (1-2 sentences max, very clear)
-
 🧰 Tech Stack
-🎨 Frontend:
+🎨 Frontend
 React
 Tailwind CSS (optional)
-
-🧠 Backend:
+🧠 Backend
 FastAPI (Python)
-
-🤖 AI:
+🤖 AI
 OpenAI API / Groq
-
-🔍 OCR:
-  pytesseract
-  easyocr
-
-🌐 Reverse Image Search:
-  SerpAPI (Google Images)
-  Bing Visual Search
-
+🔍 OCR
+pytesseract
+easyocr
+🌐 Reverse Image Search
+SerpAPI (Google Images)
+Bing Visual Search
+🗄️ Database (optional)
+SQLite
 ⚙️ Architecture
 Frontend (React)
       ↓
@@ -119,7 +115,6 @@ Backend (FastAPI)
    JSON Result
       ↓
 Frontend Display
-
 📁 Project Structure
 verifai/
 │
@@ -151,32 +146,29 @@ verifai/
 │
 ├── requirements.txt
 └── README.md
-
 ⚡ Installation
-1. Clone the repo:
+1. Clone the repo
 git clone https://github.com/your-username/verifai.git
 cd verifai
-
-3. Backend setup:
+2. Backend setup
 cd Backend
 python -m venv venv
 venv\Scripts\activate   # Windows
 
 pip install -r requirements.txt
-
-3. Run backend:
+3. Run backend
 uvicorn main:app --reload
-
-4. Frontend setup:
+4. Frontend setup
 cd frontend
 npm install
 npm start
-
 🔌 API Endpoints
-POST /analyze:
+POST /analyze
+
 Analyze content (URL or image)
 
-POST /upload:
+POST /upload
+
 Upload an image for analysis
 
 🧪 Demo Cases
@@ -187,22 +179,20 @@ Old image + recent caption
 Matching image + caption
 👉 Result: Real
 👥 Team Roles
-
-👩‍💻 Frontend Dev:
-  UI / UX
-  Results display
-👨‍💻 Backend Dev:
-  FastAPI
-  API routes
-  LLM integration
-🧠 AI / Data Dev:
-  OCR
-  Reverse image search
-  Data structuring
-
-⏱️ Hackathon Plan (20h):
-  Time	    Task
-  0–5h	    Setup + skeleton
-  5–10h	    OCR + scraping
-  10–15h	  Reverse image + pipeline
-  15–20h	  UI + debug + demo
+👩‍💻 Frontend Dev
+UI / UX
+Results display
+👨‍💻 Backend Dev
+FastAPI
+API routes
+LLM integration
+🧠 AI / Data Dev
+OCR
+Reverse image search
+Data structuring
+⏱️ Hackathon Plan (20h)
+Time	Task
+0–5h	Setup + skeleton
+5–10h	OCR + scraping
+10–15h	Reverse image + pipeline
+15–20h	UI + debug + demo
