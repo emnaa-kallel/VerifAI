@@ -95,7 +95,7 @@ reasoning_ai.py
 source_detector.py
 post_service.py
 Modèles : schemas.py
-.
+```
 VerifAI/
 ├── README.md
 ├── requirements.txt
@@ -141,7 +141,8 @@ VerifAI/
 │       ├── App.test.js
 │       ├── reportWebVitals.js
 │       └── setupTests.js
-
+└──docs
+```
 ## 🔁 User Input Methods 
 VerifAI supports two ways to analyze content: 
 --- 
