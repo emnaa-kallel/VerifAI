@@ -56,45 +56,7 @@ https://canva.link/l3tggmem6je2srh
 - LLM analyse la cohérence
 - Retourne verdict structuré
 
-## Arborescence (fichiers clés)
-
-
-43 x 8
-Je vérifie l’arborescence réelle et les fichiers frontend pour confirmer les écarts entre la réalité et le README.
-
-Conclusion
-Non, ton architecture actuelle ne correspond pas complètement à ton README actuel.
-
-Écarts principaux
-Backend/config.py n’existe pas.
-Il n’y a pas de Backend/logs/analysis_log.jsonl.
-Le frontend ne contient pas src/services/api.service.ts ni src/components/....
-Il n’y a pas de dossier docs/ dans le repo.
-SQLite n’est pas utilisé dans le code actuel.
-La recherche inversée est implémentée uniquement via SerpAPI, pas Bing Visual Search.
-Le backend utilise Groq/LLaMA via llm_service.py, mais pas de connexion OpenAI dans le code visible.
-Version corrigée du README
-Frontend (React SPA)
-
-UI, upload image/URL, saisie de caption
-Composant principal : App.js
-Styles : App.css
-HTTP/REST
-
-Backend API (Python FastAPI)
-
-Point d'entrée : main.py
-Orchestration : pipeline.py
-API route wrapper : routes.py
-Services :
-ocr.py
-reverse_image.py
-url_service.py
-llm_service.py
-reasoning_ai.py
-source_detector.py
-post_service.py
-Modèles : schemas.py
+## Arborescence 
 ```
 VerifAI/
 ├── README.md
