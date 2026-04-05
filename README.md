@@ -96,44 +96,51 @@ source_detector.py
 post_service.py
 Modèles : schemas.py
 .
+VerifAI/
 ├── README.md
 ├── requirements.txt
-├── Backend/
-│ ├── .env
-│ ├── main.py
-│ ├── api/
-│ │ └── routes.py
-│ ├── core/
-│ │ └── pipeline.py
-│ ├── models/
-│ │ └── schemas.py
-│ ├── services/
-│ │ ├── context_service.py
-│ │ ├── ocr.py
-│ │ ├── reverse_image.py
-│ │ ├── url_service.py
-│ │ ├── llm_service.py
-│ │ ├── reasoning_ai.py
-│ │ ├── source_detector.py
-│ │ └── post_service.py
-│ ├── reverse_image.py
-│ ├── test_ocr.png
-│ ├── test_unit_context.py
-│ ├── test_unit_ocr.py
-│ ├── uploads/
-│ └── venv/
+│
+├── backend/
+│   ├── main.py                      # Point d'entrée de l'application FastAPI
+│   │
+│   ├── api/
+│   │   └── routes.py               # Routes / endpoints API
+│   │
+│   ├── core/
+│   │   └── pipeline.py             # Orchestration du pipeline IA
+│   │
+│   ├── models/
+│   │   └── schemas.py             # Schémas Pydantic (modèles de données)
+│   │
+│   ├── services/
+│   │   ├── ocr.py                 # Extraction de texte (OCR)
+│   │   ├── reverse_image.py       # Recherche d’image inversée
+│   │   ├── url_service.py         # Analyse et traitement des URLs
+│   │   ├── llm_service.py         # Appels aux modèles de langage
+│   │   ├── reasoning_ai.py        # Raisonnement IA / analyse logique
+│   │   ├── source_detector.py     # Détection et validation des sources
+│   │   ├── post_service.py        # Traitement des posts (texte/image)
+│   │   └── context_service.py     # Gestion du contexte global
+│   │
+│   ├── uploads/                   # Fichiers uploadés (images, etc.)
+│   ├── test_ocr.png
+│   ├── test_unit_ocr.py
+│   ├── test_unit_context.py
+│   └── venv/                      # Environnement virtuel (à ignorer Git)
+│
 ├── frontend/
-│ ├── package.json
-│ ├── public/
-│ │ └── index.html
-│ └── src/
-│ ├── App.js
-│ ├── App.css
-│ ├── index.js
-│ ├── index.css
-│ ├── App.test.js
-│ ├── reportWebVitals.js
-│ └── setupTests.js
+│   ├── package.json
+│   ├── public/
+│   │   └── index.html
+│   │
+│   └── src/
+│       ├── App.js
+│       ├── App.css
+│       ├── index.js
+│       ├── index.css
+│       ├── App.test.js
+│       ├── reportWebVitals.js
+│       └── setupTests.js
 
 ## 🔁 User Input Methods 
 VerifAI supports two ways to analyze content: 
